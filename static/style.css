@@ -1,0 +1,229 @@
+:root {
+    --green: #72A276;
+    --black: #0A0908;
+    --white: #FFFDF7;
+    --blue: #6D98BA;
+    --gray: #A8C7AA;
+}
+
+@font-face {
+    font-family: MyFont;
+    src: url(../static/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+@font-face {
+    font-family: MyFontLight;
+    src: url(../static/Titillium_Web/TitilliumWeb-Light.ttf);
+}
+
+@font-face {
+    font-family: MyFontItalic;
+    src: url(../static/Titillium_Web/TitilliumWeb-Italic.ttf);
+}
+
+* {
+    font-family: MyFont;
+    padding: 5px ;
+    margin: 5px;
+    color: var(--black)
+}
+
+#webname {
+    background-color: var(--blue);
+    color: var(--black);
+    border: 1px solid var(--black);
+    margin: -5px;
+    font-family: MyFontLight;
+}
+
+.classA {
+    width: 45%;
+    display: inline-block;
+    border: 2px solid var(--black);
+    background-color: var(--gray);
+}
+
+header {
+    margin: -5px;
+    border: 1px solid var(--black);
+}
+
+nav a {
+    text-decoration: none;
+    font-size: large;
+    margin: -5px;
+    margin-right: 15px;
+    color: var(--white);
+    float: left;
+    display: block;
+}
+
+nav {
+    border: 1px solid var(--black);
+    background-color: var(--black);
+    margin: -5px;
+    overflow: hidden;
+}
+
+a:hover {
+    color: var(--blue);
+}
+
+.main {
+    margin-left: -15px;
+}
+
+h2 {
+    text-decoration-line: underline;
+}
+
+form * {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    border: 1px solid var(--black);
+}
+
+form label {
+    background-color: var(--gray);
+}
+
+form input[type="submit"] {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #598AB1;
+}
+
+ul * {
+    margin-left: 20px;
+}
+
+th {
+    padding: 12px;
+    background-color: var(--green);
+    color: var(--black);
+    width: fit-content;
+}
+
+table tr:nth-of-type(even) {
+    background-color: var(--gray);
+}
+
+table tr:hover {
+    background-color: var(--green);
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table * {
+    border: 1px solid var(--black);
+    text-align: center;
+}
+
+table a {
+    border: none;
+}
+
+table a:hover {
+    color: var(--white);
+}
+
+footer{
+    margin-left: -15px;
+    margin-bottom: -15px;
+}
+
+/* #FavList {
+    display: none;
+} */
+
+#SeeMoreBTN {
+    background-color: var(--blue);
+    border-radius: 16px;
+    font-size: large;
+}
+
+#SeeMoreBTN:hover {
+    background-color: #598AB1;
+}
+
+#longIntro, #readLess {
+    display: none;
+}
+
+#readLess, #readMore {
+    font-family: MyFontItalic;
+    float: right;
+}
+
+#readLess:hover, #readMore:hover {
+    background-color: var(--green);
+}
+
+#ValidateMsg {
+    width: max-content;
+    margin: auto;
+}
+
+#map {
+    height: 40vh;
+}
+
+#funIMG {
+    width: 350px;
+    height: 225px;
+    border-radius: 100%;
+}
+
+.mainFun {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#item1, #item2, #item3, #item4 {
+    width: 40vw;
+    margin: auto;
+}
+
+nav a:hover {
+    color: var(--blue);
+}
+
+nav a.active {
+    color: var(--blue);
+}
+
+nav a.icon {
+    background-color: var(--blue);
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }}
+
+@media screen and (max-width: 650px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }}
